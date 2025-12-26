@@ -1,0 +1,14 @@
+{
+  "title": "Getting Started with TypeScript: A Beginner's Guide",
+  "excerpt": "Learn the basics of TypeScript, including types, interfaces, and how to set up your first TypeScript project.",
+  "content": "<h1>Getting Started with TypeScript: A Beginner's Guide</h1>\n\n<p>TypeScript has become an essential tool in modern web development, offering type safety and enhanced developer experience on top of JavaScript. This guide will help you get started with TypeScript and understand its key concepts.</p>\n\n<h2>What is TypeScript?</h2>\n\n<p>TypeScript is a strongly typed programming language that builds on JavaScript. It adds optional static types, classes, and modules to JavaScript, making it easier to write and maintain large applications.</p>\n\n<h2>Setting Up Your First TypeScript Project</h2>\n\n<p>To get started with TypeScript, you'll need Node.js installed. Then, you can create a new TypeScript project:</p>\n\n<pre><code>mkdir my-ts-project\ncd my-ts-project\nnpm init -y\nnpm install typescript --save-dev\nnpx tsc --init</code></pre>\n\n<h2>Basic Types in TypeScript</h2>\n\n<p>TypeScript includes several basic types:</p>\n\n<ul>\n<li><strong>string</strong>: Text data</li>\n<li><strong>number</strong>: Numeric values</li>\n<li><strong>boolean</strong>: true/false values</li>\n<li><strong>array</strong>: Collections of values</li>\n<li><strong>object</strong>: Key-value pairs</li>\n<li><strong>any</strong>: Any type (use sparingly)</li>\n</ul>\n\n<h2>Interfaces</h2>\n\n<p>Interfaces are one of TypeScript's most powerful features. They allow you to define contracts in your code:</p>\n\n<pre><code>interface User {\n  id: number;\n  name: string;\n  email: string;\n  age?: number; // Optional property\n}</code></pre>\n\n<h2>Type Inference</h2>\n\n<p>TypeScript can infer types automatically:</p>\n\n<pre><code>let message = 'Hello'; // TypeScript infers string type\nlet count = 42; // TypeScript infers number type</code></pre>\n\n<h2>Benefits of Using TypeScript</h2>\n\n<ul>\n<li>Better IDE support with autocompletion</li>\n<li>Catch errors before runtime</li>\n<li>Improved code maintainability</li>\n<li>Better documentation through types</li>\n<li>Enhanced refactoring capabilities</li>\n</ul>\n\n<h2>Next Steps</h2>\n\n<p>After mastering the basics, you can explore:</p>\n\n<ul>\n<li>Generics</li>\n<li>Decorators</li>\n<li>Advanced Types</li>\n<li>Type Guards</li>\n<li>Utility Types</li>\n</ul>\n\n<h2>Conclusion</h2>\n\n<p>TypeScript is a powerful tool that can help you write better, more maintainable JavaScript code. Start with the basics and gradually explore its more advanced features as you become comfortable with the fundamentals.</p>",
+  "image": "/blog/typescript.jpg",
+  "date": "2024-03-10",
+  "category": "Programming",
+  "views": 256,
+  "likes": 78,
+  "author": {
+    "name": "Dilip BK",
+    "image": "/dilip.jpeg"
+  }
+}
