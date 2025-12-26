@@ -51,7 +51,7 @@ export default function Contact() {
           className="mb-16"
         >
           <a
-            href="mailto:dilipbkrestha@gmail.com"
+            href="mailto:dilipbk.dev@gmail.com"
             className="btn-outline text-lg px-8 py-4"
           >
             Say Hello
@@ -71,7 +71,7 @@ export default function Contact() {
 
           <div className="flex justify-center items-center space-x-8">
             <motion.a
-              href="https://github.com/dilipbkrestha"
+              href="https://github.com/dilipbk"
               target="_blank"
               rel="noopener noreferrer"
               className="text-text-light-slate hover:text-green-tint transition-colors duration-250 group"
@@ -85,7 +85,7 @@ export default function Contact() {
             </motion.a>
 
             <motion.a
-              href="https://www.linkedin.com/in/dilipbkrestha/"
+              href="https://www.linkedin.com/in/dilipbk"
               target="_blank"
               rel="noopener noreferrer"
               className="text-text-light-slate hover:text-green-tint transition-colors duration-250 group"
@@ -99,7 +99,7 @@ export default function Contact() {
             </motion.a>
 
             <motion.a
-              href="https://twitter.com/dilipbkrestha"
+              href="https://x.com/Dilip_XP"
               target="_blank"
               rel="noopener noreferrer"
               className="text-text-light-slate hover:text-green-tint transition-colors duration-250 group"
@@ -113,7 +113,7 @@ export default function Contact() {
             </motion.a>
 
             <motion.a
-              href="mailto:dilipbkrestha@gmail.com"
+              href="mailto:dilipbk.dev@gmail.com"
               className="text-text-light-slate hover:text-green-tint transition-colors duration-250 group"
               whileHover={{ y: -3 }}
               transition={{ type: "spring", stiffness: 300 }}

@@ -62,7 +62,7 @@ export default function Hero() {
       <div className="fixed left-8 bottom-0 hidden lg:flex flex-col items-center z-10">
         <div className="flex flex-col space-y-6 mb-8">
           <motion.a
-            href="https://github.com/dilipbkrestha"
+            href="https://github.com/dilipbk"
             target="_blank"
             rel="noopener noreferrer"
             className="text-text-light-slate hover:text-green-tint transition-colors duration-250 hover:-translate-y-1 transform"
@@ -80,7 +80,7 @@ export default function Hero() {
           </motion.a>
 
           <motion.a
-            href="https://www.instagram.com/dilipbkrestha/"
+            href="https://www.instagram.com/dilipbk/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-text-light-slate hover:text-green-tint transition-colors duration-250 hover:-translate-y-1 transform"
@@ -94,7 +94,7 @@ export default function Hero() {
           </motion.a>
 
           <motion.a
-            href="https://twitter.com/dilipbkrestha"
+            href="https://x.com/Dilip_XP"
             target="_blank"
             rel="noopener noreferrer"
             className="text-text-light-slate hover:text-green-tint transition-colors duration-250 hover:-translate-y-1 transform"
@@ -108,7 +108,7 @@ export default function Hero() {
           </motion.a>
 
           <motion.a
-            href="https://www.linkedin.com/in/dilipbkrestha/"
+            href="https://www.linkedin.com/in/dilipbk/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-text-light-slate hover:text-green-tint transition-colors duration-250 hover:-translate-y-1 transform"
@@ -131,14 +131,14 @@ export default function Hero() {
 
       <div className="fixed right-8 bottom-0 hidden lg:flex flex-col items-center z-10">
         <motion.a
-          href="mailto:dilipbkrestha@gmail.com"
+          href="mailto:dilipbk.dev@gmail.com"
           className="text-text-light-slate hover:text-green-tint font-mono text-sm tracking-widest transition-colors duration-250 hover:-translate-y-1 transform"
           style={{ writingMode: "vertical-rl" }}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.2, duration: 0.6 }}
         >
-          dilipbkrestha@gmail.com
+          dilipbk.dev@gmail.com
         </motion.a>
         <div className="w-px h-24 bg-text-light-slate mt-8"></div>
       </div>
