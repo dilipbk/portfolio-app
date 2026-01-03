@@ -6,36 +6,46 @@ import { useRef } from "react";
 
 const skillCategories = [
   {
+    title: "Languages",
+    skills: [
+      { name: "TypeScript", level: 95 },
+      { name: "JavaScript", level: 95 },
+      { name: "Python", level: 75 },
+      { name: "Rust", level: 65 },
+      { name: "Java", level: 70 },
+    ],
+  },
+  {
     title: "Frontend",
     skills: [
-      { name: "JavaScript", level: 95 },
-      { name: "TypeScript", level: 90 },
       { name: "React", level: 95 },
-      { name: "Next.js", level: 85 },
-      { name: "Vue.js", level: 80 },
-      { name: "CSS/SCSS", level: 90 },
+      { name: "Next.js", level: 90 },
+      { name: "Material UI", level: 90 },
+      { name: "Redux", level: 92 },
+      { name: "React Query", level: 88 },
+      { name: "Zustand", level: 85 },
     ],
   },
   {
     title: "Backend",
     skills: [
-      { name: "Node.js", level: 90 },
-      { name: "Python", level: 85 },
-      { name: "Express.js", level: 88 },
+      { name: "Node.js", level: 92 },
+      { name: "Express", level: 90 },
+      { name: "MongoDB", level: 88 },
       { name: "PostgreSQL", level: 85 },
-      { name: "MongoDB", level: 82 },
-      { name: "GraphQL", level: 78 },
+      { name: "Redis", level: 80 },
+      { name: "Prisma", level: 85 },
     ],
   },
   {
-    title: "Tools & Others",
+    title: "DevOps & Tools",
     skills: [
-      { name: "Git", level: 95 },
-      { name: "Docker", level: 80 },
-      { name: "AWS", level: 75 },
-      { name: "Jest", level: 85 },
-      { name: "Webpack", level: 80 },
-      { name: "Linux", level: 85 },
+      { name: "AWS", level: 82 },
+      { name: "GitHub Actions", level: 88 },
+      { name: "Docker", level: 85 },
+      { name: "Kubernetes", level: 70 },
+      { name: "Webpack", level: 85 },
+      { name: "Babel", level: 80 },
     ],
   },
 ];
@@ -157,7 +167,7 @@ export default function Skills() {
           with:
         </motion.p>
 
-        <div className="grid md:grid-cols-3 gap-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {skillCategories.map((category, index) => (
             <SkillCategory
               key={category.title}

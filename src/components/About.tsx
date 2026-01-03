@@ -6,16 +6,16 @@ import Image from "next/image";
 import { useRef } from "react";
 
 const technologies = [
-  "JavaScript (ES6+)",
   "TypeScript",
-  "React",
-  "Node.js",
-  "Next.js",
-  "Python",
-  "PostgreSQL",
-  "MongoDB",
-  "AWS",
-  "Docker",
+  "React / Next.js",
+  "Node.js / Express",
+  "React Native",
+  "Redux / Zustand",
+  "PostgreSQL / MongoDB",
+  "AWS / Docker",
+  "GitHub Actions",
+  "Material UI",
+  "Prisma / Mongoose",
 ];
 
 export default function About() {
@@ -53,80 +53,37 @@ export default function About() {
               <p>
                 Hello! My name is Dilip and I enjoy creating things that live on
                 the internet. My interest in web development started back in
-                2012 when I decided to try editing custom Tumblr themes — turns
-                out hacking together a custom reblog button taught me a lot
-                about HTML &amp; CSS!
+                2019 when I began my journey as a software engineer — turns out
+                building scalable web applications taught me a lot about
+                creating impactful digital experiences!
               </p>
 
               <p>
                 Fast-forward to today, and I&apos;ve had the privilege of
-                working at{" "}
-                <a
-                  href="https://us.mullenlowe.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-green-tint hover:text-green-bright transition-colors duration-250 relative group"
-                >
-                  an advertising agency
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-green-tint group-hover:w-full transition-all duration-300" />
-                </a>
-                ,{" "}
-                <a
-                  href="https://starry.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-green-tint hover:text-green-bright transition-colors duration-250 relative group"
-                >
-                  a start-up
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-green-tint group-hover:w-full transition-all duration-300" />
-                </a>
-                ,{" "}
-                <a
-                  href="https://www.apple.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-green-tint hover:text-green-bright transition-colors duration-250 relative group"
-                >
-                  a huge corporation
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-green-tint group-hover:w-full transition-all duration-300" />
-                </a>
-                , and{" "}
-                <a
-                  href="https://scout.camd.northeastern.edu/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-green-tint hover:text-green-bright transition-colors duration-250 relative group"
-                >
-                  a student-led design studio
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-green-tint group-hover:w-full transition-all duration-300" />
-                </a>
-                . My main focus these days is building accessible, inclusive
-                products and digital experiences at{" "}
-                <a
-                  href="https://upstatement.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-green-tint hover:text-green-bright transition-colors duration-250 relative group"
-                >
-                  Upstatement
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-green-tint group-hover:w-full transition-all duration-300" />
-                </a>{" "}
-                for a variety of clients.
+                working with diverse teams across different continents, building
+                everything from streaming platforms serving millions of users to
+                property management systems and restaurant solutions. My main
+                focus these days is building high-performance, scalable
+                applications with React Native and modern web technologies,
+                while leading engineering initiatives and mentoring developers.
               </p>
 
               <p>
-                I also recently{" "}
+                I graduated from{" "}
                 <a
-                  href="https://www.newline.co/courses/build-a-spotify-connected-app"
+                  href="https://tribhuvan-university.edu.np"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-green-tint hover:text-green-bright transition-colors duration-250 relative group"
                 >
-                  launched a course
+                  Tribhuvan University
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-green-tint group-hover:w-full transition-all duration-300" />
                 </a>{" "}
-                that covers everything you need to build a web app with the
-                Spotify API using Node &amp; React.
+                with a Bachelor of Information Management (2019-2024).
+                Throughout my career, I&apos;ve consistently focused on
+                performance optimization, achieving significant improvements in
+                load times, crash-free sessions, and overall user experience
+                across various projects.
               </p>
 
               <p>

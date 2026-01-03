@@ -80,7 +80,7 @@ export default function Hero() {
           </motion.a>
 
           <motion.a
-            href="https://www.instagram.com/dilipbk/"
+            href="https://www.instagram.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-text-light-slate hover:text-green-tint transition-colors duration-250 hover:-translate-y-1 transform"
@@ -171,12 +171,18 @@ export default function Hero() {
             </motion.h1>
 
             <motion.h2
-              className="text-5xl md:text-6xl lg:text-7xl font-bold text-text-light-slate mt-3 mb-6"
+              className="text-5xl md:text-6xl lg:text-7xl font-bold text-text-light-slate mt-4 mb-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
             >
-              I build things for the web.
+              <p className="leading-tight">
+                I build things that turn{" "}
+                <span className="border-b-4 pb-1 border-primary/70 text-primary/70">
+                  ugh
+                </span>{" "}
+                into nice
+              </p>
             </motion.h2>
 
             <motion.p
@@ -185,19 +191,9 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
             >
-              I&apos;m a software engineer specializing in building (and
-              occasionally designing) exceptional digital experiences.
-              Currently, I&apos;m focused on building accessible, human-centered
-              products at{" "}
-              <a
-                href="https://spotify.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-green-tint hover:underline"
-              >
-                Spotify
-              </a>
-              .
+              I write code, break it, fix it, and turn ideas into delightful
+              digital experiences. Passionate about building accessible,
+              human-friendly products that actually make sense to real people.
             </motion.p>
 
             <motion.a
@@ -228,7 +224,7 @@ export default function Hero() {
               transition={{ delay: 0.7, duration: 0.6 }}
             >
               <h3 className="text-green-tint font-mono text-sm mb-4">
-                &bsol;&bsol; Current Tech Stack
+                \\ Current Tech Stack
               </h3>
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-2">
@@ -244,7 +240,7 @@ export default function Hero() {
                     Backend
                   </div>
                   <div className="text-text-slate text-xs">
-                    Node.js, Python, PostgreSQL
+                    Node.js, Rust, PostgreSQL, MongoDB
                   </div>
                 </div>
               </div>
@@ -258,7 +254,7 @@ export default function Hero() {
               transition={{ delay: 0.8, duration: 0.6 }}
             >
               <h3 className="text-green-tint font-mono text-sm mb-4">
-                &bsol;&bsol; Current Status
+                \\ Current Status
               </h3>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
@@ -290,7 +286,7 @@ export default function Hero() {
               transition={{ delay: 0.9, duration: 0.6 }}
             >
               <h3 className="text-green-tint font-mono text-sm mb-4">
-                &bsol;&bsol; Quick Stats
+                \\ Quick Stats
               </h3>
               <div className="space-y-3">
                 <div className="flex justify-between items-center">
@@ -298,7 +294,7 @@ export default function Hero() {
                     Years Experience
                   </span>
                   <span className="text-2xl font-bold text-text-lightest-slate">
-                    3+
+                    6+
                   </span>
                 </div>
                 <div className="flex justify-between items-center">
@@ -314,7 +310,7 @@ export default function Hero() {
                     Technologies
                   </span>
                   <span className="text-2xl font-bold text-text-lightest-slate">
-                    15+
+                    10+
                   </span>
                 </div>
                 <div className="flex justify-between items-center">

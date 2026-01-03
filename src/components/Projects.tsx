@@ -10,8 +10,8 @@ type Project = {
   description: string;
   image: string;
   technologies: string[];
-  github: string;
-  external: string;
+  github?: string;
+  external?: string;
   category: string;
   year: string;
   status: string;
@@ -21,129 +21,108 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Spotify Web Player Clone",
+    title: "NetTV",
     description:
-      "A fully functional Spotify web player clone built with React, Node.js, and the Spotify Web API. Features include user authentication, playlist management, music playback, and real-time data synchronization.",
-    image:
-      "https://images.unsplash.com/photo-1611339555312-e607c8352fd7?w=600&h=400&fit=crop&auto=format&q=80",
-    technologies: ["React", "Node.js", "Spotify API", "Express", "MongoDB"],
-    github: "https://github.com/dilipbk/spotify-clone",
-    external: "https://spotify-clone-dilip.vercel.app",
-    category: "Full Stack",
+      "OTT, IPTV and streaming platform with 200+ live channels, games, movies, etc. Serves 5m+ users with real-time content delivery, user management, and scalable architecture for seamless streaming experience.",
+    image: "/projects/nettv.png",
+    technologies: ["React", "Node.js", "MongoDB", "Redis", "AWS", "Socket.io"],
+    github: "https://github.com/dilipbk",
+    external: "https://nettv.com.np",
+    category: "Frontend",
     year: "2024",
     status: "Live",
-    impact: "50K+ users",
+    impact: "5M+ users",
     featured: true,
   },
   {
-    title: "Task Management Dashboard",
+    title: "Nepali Patro",
     description:
-      "A comprehensive project management tool with drag-and-drop functionality, real-time collaboration, and advanced filtering. Built with modern React patterns and optimized for performance.",
-    image:
-      "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop&auto=format&q=80",
+      "Developed Nepali Patro, a comprehensive Nepali calendar app with events, festivals, horoscope, news, blogs, and more, serving 10M+ monthly active users and promoting Nepali culture globally.",
+    image: "/projects/nepali-patro.png",
+    technologies: ["React", "Node.js", "MongoDB", "Socket.io", "Redux"],
+    github: "https://github.com/dilipbk",
+    external: "https://napalination.com",
+    category: "Full Stack",
+    year: "2024",
+    status: "Live",
+    impact: "50+ users",
+    featured: true,
+  },
+  {
+    title: "Seldio",
+    description:
+      "Complete restaurant solution with apps like tenant management, ordering, POS, web for real-time notifications, chat, etc. Features multi-tenant architecture, inventory management, and analytics dashboard.",
+    image: "/projects/seldio.webp",
     technologies: [
       "React",
+      "Next.js",
       "TypeScript",
-      "Firebase",
       "Tailwind CSS",
-      "Framer Motion",
+      "Laravel",
+      "MySQL",
     ],
-    github: "https://github.com/dilipbk/task-dashboard",
-    external: "https://task-dashboard-dilip.vercel.app",
-    category: "Frontend",
-    year: "2024",
-    status: "Live",
-    impact: "30+ teams",
-    featured: true,
-  },
-  {
-    title: "E-commerce Analytics Platform",
-    description:
-      "Analytics dashboard for e-commerce businesses featuring real-time data visualization, customer insights, and sales performance tracking. Integrated with multiple payment gateways.",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&auto=format&q=80",
-    technologies: ["Next.js", "Python", "PostgreSQL", "Chart.js", "Stripe API"],
-    github: "https://github.com/dilipbk/analytics-platform",
-    external: "https://analytics-platform-demo.vercel.app",
-    category: "Data Viz",
-    year: "2023",
-    status: "Featured",
-    impact: "$2M tracked",
-    featured: true,
-  },
-  {
-    title: "Weather Forecast App",
-    description:
-      "Beautiful weather application with location-based forecasts, interactive maps, and weather alerts. Features smooth animations and responsive design.",
-    image:
-      "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop&auto=format&q=80",
-    technologies: ["Vue.js", "OpenWeather API", "CSS3", "JavaScript"],
-    github: "https://github.com/dilipbk/weather-app",
-    external: "https://weather-app-dilip.netlify.app",
+    github: "https://github.com/dilipbk",
+    external: "https://seldio.fi",
     category: "Frontend",
     year: "2023",
     status: "Live",
-    impact: "Global reach",
-    featured: false,
+    impact: "Multi-tenant",
+    featured: true,
   },
   {
-    title: "Real-time Chat Application",
+    title: "Myldre",
     description:
-      "Full-stack chat application with real-time messaging, file sharing, and group conversations. Built with Socket.io for seamless communication.",
-    image:
-      "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=600&h=400&fit=crop&auto=format&q=80",
-    technologies: ["React", "Socket.io", "Express", "MongoDB", "JWT"],
-    github: "https://github.com/dilipbk/chat-app",
-    external: "https://chat-app-dilip.herokuapp.com",
+      "Developed Myldre, a secure and scalable property management system centralizing properties, tenants, owners, maintenance, employees, and finances with role-based access, real-time notifications, and streamlined operational workflows.",
+    image: "/projects/myldre.png",
+    technologies: ["React", "Node.js", "MongoDB", "Socket.io", "Material UI"],
+    github: "https://github.com/dilipbk",
+    external: "https://myldre.no",
     category: "Full Stack",
     year: "2023",
-    status: "Archive",
-    impact: "10K+ messages",
+    status: "Live",
+    impact: "Real-time",
     featured: false,
   },
   {
-    title: "Machine Learning Pipeline",
+    title: "Params Wizard",
     description:
-      "End-to-end ML pipeline for predictive analytics with data preprocessing, model training, and deployment. Includes automated retraining and monitoring capabilities.",
+      "NPM package for elegant URL parameter management in JavaScript/TypeScript applications. Provides type-safe parameter parsing, validation, and serialization with zero dependencies.",
     image:
-      "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop&auto=format&q=80",
-    technologies: ["Python", "TensorFlow", "Docker", "AWS", "FastAPI"],
-    github: "https://github.com/dilipbk/ml-pipeline",
-    external: "https://ml-pipeline-demo.herokuapp.com",
-    category: "Machine Learning",
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop&auto=format&q=80",
+    technologies: ["TypeScript", "Node.js", "NPM"],
+    github: "https://github.com/dilipbk/params-wizard",
+    external: "https://www.npmjs.com/package/params-wizard",
+    category: "Open Source",
     year: "2024",
     status: "Live",
-    impact: "95% accuracy",
-    featured: false,
+    impact: "NPM Package",
+    featured: true,
   },
   {
-    title: "Blockchain Voting System",
+    title: "Munchfam",
     description:
-      "Decentralized voting platform built on Ethereum blockchain ensuring transparency and immutability. Features smart contracts and web3 integration.",
-    image:
-      "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=600&h=400&fit=crop&auto=format&q=80",
-    technologies: ["Solidity", "Web3.js", "React", "Ethereum", "IPFS"],
-    github: "https://github.com/dilipbk/blockchain-voting",
-    external: "https://blockchain-voting-demo.netlify.app",
-    category: "Blockchain",
-    year: "2023",
-    status: "Live",
-    impact: "Secure voting",
-    featured: false,
-  },
-  {
-    title: "Mobile Game Engine",
-    description:
-      "Cross-platform 2D game engine built with Unity and C#. Includes physics simulation, particle systems, and asset management tools.",
-    image:
-      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&h=400&fit=crop&auto=format&q=80",
-    technologies: ["Unity", "C#", "OpenGL", "Android", "iOS"],
-    github: "https://github.com/dilipbk/game-engine",
-    external: "https://gameengine-demo.com",
-    category: "Game Dev",
+      "Contributed to building Munchfam, an all-in-one restaurant operating platform enabling unified order management, virtual brands, ingredient sourcing, and e-commerce solutions to help restaurants scale operations and improve profitability.",
+    image: "/projects/munchfam.jpeg",
+    technologies: ["React", "Node.js", "MongoDB", "Redux", "Stripe"],
+    github: "https://github.com/dilipbk",
+    external: "https://munaffan.com",
+    category: "E-commerce",
     year: "2022",
-    status: "Archive",
-    impact: "Open source",
+    status: "Live",
+    impact: "Online store",
+    featured: false,
+  },
+  {
+    title: "Garment E-commerce",
+    description:
+      "Full-featured e-commerce platform for garment industry with inventory management, size variations, color options, and secure payment processing. Includes admin dashboard for order management.",
+    image:
+      "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop&auto=format&q=80",
+    technologies: ["React", "Node.js", "PostgreSQL", "Redux", "AWS"],
+    category: "E-commerce",
+    year: "2022",
+    status: "Live",
+    impact: "Online retail",
     featured: false,
   },
 ];
@@ -455,7 +434,7 @@ const FeaturedProject = ({
             transition={{ duration: 0.6, delay: index * 0.2 + 0.3 }}
           >
             <a
-              href={project.external}
+              href={project.external ?? "#"}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-green-tint transition-colors duration-300"
@@ -517,26 +496,28 @@ const FeaturedProject = ({
               <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
             </svg>
           </a>
-          <a
-            href={project.external}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-text-slate hover:text-green-tint transition-colors duration-300"
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+          {project?.external && (
+            <a
+              href={project.external}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-text-slate hover:text-green-tint transition-colors duration-300"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-              />
-            </svg>
-          </a>
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                />
+              </svg>
+            </a>
+          )}
         </motion.div>
       </div>
     </motion.div>
@@ -586,44 +567,48 @@ const ProjectGrid = ({ projects }: { projects: Project[] }) => {
                 {project.year}
               </span>
               <div className="flex items-center gap-3">
-                <motion.a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-text-slate hover:text-green-tint transition-colors duration-300"
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <svg
-                    className="w-5 h-5"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
+                {project?.github && (
+                  <motion.a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-text-slate hover:text-green-tint transition-colors duration-300"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
                   >
-                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
-                  </svg>
-                </motion.a>
-                <motion.a
-                  href={project.external}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-text-slate hover:text-green-tint transition-colors duration-300"
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <svg
-                    className="w-5 h-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
+                    <svg
+                      className="w-5 h-5"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+                    </svg>
+                  </motion.a>
+                )}
+                {project?.external && (
+                  <motion.a
+                    href={project.external}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-text-slate hover:text-green-tint transition-colors duration-300"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                    />
-                  </svg>
-                </motion.a>
+                    <svg
+                      className="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
+                    </svg>
+                  </motion.a>
+                )}
               </div>
             </div>
           </div>
